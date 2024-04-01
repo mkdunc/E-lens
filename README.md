@@ -13,4 +13,11 @@ Electron lens source design
     <br />
 
 
-Lower level trak tools (Strong_Source_TRAK_tools.ipynb)
+<ins> Lower level trak tools (SimpleSource_TRAK_base_tools.ipynb) </ins> <br />
+Defines all the base tools that will be used in the simulations: <br /> 
+ - Current_conv (saves convergence plot and returns final current for each simulation) <br />
+Format: current_conv(‘path_to_file/file.TLS’) <br />
+- E_field_line (plots the electric field at defined slices, the z-slice given needs to have been run through trak with ESCAN.) <br /> 
+Format: E_filed_line(‘path_to_file/file.TLS’, e-field z-slice location: a float, plots = True) <br />
+- cdensity (saves current density plot at z-slice and returns current density data, the z-slice given needs to have been run through trak with CDENS.) <br />
+
