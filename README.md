@@ -43,12 +43,9 @@ Note: all the details for the mesh file are defined within this function and can
 - permag_file2: write the magnetic permag file, given the desired input mesh file. Returns nothing other than the file that is created. <br />
 -- Format: permag_file2(‘path/mesh_file_to_use’, ‘path/file_to_save_as.PIN’) <br />
 Note: The magnet’s current that produces a field is the Current(2) parameter. It can be changed to change the solenoidal magnetic field.  <br />
-
-
 - TRAK_file2: write the trak .tin file with the given input estat and permag files. Returns nothing other than the file that is created. <br />
 -- Format: TRAK_file2(‘path/estat_file_name.EOU’, ‘path/permag_file_name.POU’, ‘path/TRAK_file_to_save_to.TIN’)  <br />
 Note: The other specific TRAK parameters are pre-set in this function, so it would be the first one to run and then change that one for desired changes in avg, demit, and ncycle. <br />
-
 - run_parallel: call the run parallel script (run_trak_cmd.py) with the given file list, number of simulations to run in parallel, and command. The command can be TRAK, MESH, ESTAT, or PERMAG. Returns nothing other than running the script. <br />
 Format: run_parallel([‘file1’, ‘file2’, file3’, etc…], number of files t run in parallel: a string, command to run: a string. Can be either TRAK, MESH, ESTAT, or PERMAG)  <br />
 
