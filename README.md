@@ -51,7 +51,28 @@ Format: run_parallel([‘file1’, ‘file2’, file3’, etc…], number of fil
 
 
 
-#### <ins> Upper Level TRAK Tools (SimpleSource_TRAK_tools.ipynb):  </ins> <br />
+### <ins> Upper Level TRAK Tools (SimpleSource_TRAK_tools.ipynb):  </ins> <br />
+defines the upper level tools to be used for running the lower level TRAK tools. Separated into sections for building the simulations and analyzing the simulations. <br />
+
+Build:  <br />
+- run_mesh_estat: build mesh and then run it for estat input. Returns nothing other than performing this operation. See 'mesh_file_electrode_spacing2' function for more details. <br />
+-- Format: run_mesh_estat(focus electrode x position: float, focus electrode y position: float, anode x position: float, anode y position: float, ‘path/mesh_file_save_as.MIN’)  <br />
+
+- run_estat: build estat with given mesh and run it. Returns nothing other than performing this operation. See 'estat_file2' function for more details.  <br />
+-- Format: run_estat(‘path/estat_file_to save_as.EIN’, ‘path/mesh_file_to_use’, emission potential: a string of the value, focus electrode potential: a string of the value) <br />
+
+- run_mesh_permag: build mesh and then run it for permag input. Returns nothing other than performing this operation. See 'mesh_permag_file2' function for more details. <br />
+-- Format: run_mesh_permag(‘path/file_to_save_mesh_as.MIN’) <br />
+
+
+
+run_permag (build permag with given mesh and run it) 
+Format: run_permag(‘path/file_to_save.PIN’, ‘path/mesh_file_to_uss_as_input’)
+run_trak (build trak with a given estat and peramag and run it)
+Format: run_trak(‘path/estat_file_as_input.EOU’, ‘path/permag_file_as_input.POU’, ‘path/TRAK_file_to_save_as.TIN’)
+
+
+
 
 
 
