@@ -66,10 +66,12 @@ Build:  <br />
 
 
 
-run_permag (build permag with given mesh and run it) 
-Format: run_permag(‘path/file_to_save.PIN’, ‘path/mesh_file_to_uss_as_input’)
-run_trak (build trak with a given estat and peramag and run it)
-Format: run_trak(‘path/estat_file_as_input.EOU’, ‘path/permag_file_as_input.POU’, ‘path/TRAK_file_to_save_as.TIN’)
+- run_permag: build permag with given mesh and run it. Returns nothing other than performing this operation. See 'permag_file2' function for more details. <br />
+-- Format: run_permag(‘path/file_to_save.PIN’, ‘path/mesh_file_to_use_as_input’) <br />
+
+
+- run_trak: build trak with given estat and peramag files and run it. Returns nothing other than performing this operation. See 'TRAK_file2' function for more details. <br />
+-- Format: run_trak(‘path/estat_file_as_input.EOU’, ‘path/permag_file_as_input.POU’, ‘path/TRAK_file_to_save_as.TIN’) <br />
 
 
 
