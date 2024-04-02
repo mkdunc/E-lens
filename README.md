@@ -92,11 +92,13 @@ Analyze:  <br />
 
 
 
-### <ins> Entire TRAK function (SimpleSource_XOPT_run.ipynb):  </ins> <br />
+### <ins> Entire TRAK function - for Xopt optimization (SimpleSource_XOPT_run.ipynb):  </ins> <br />
 Assemble and use the tools to create and run estat and permag meshes (.min, .mls, .mou), create and run estat (.ein, .els, .eou) and permag (.pin, .pls, .pou) and trak (.tin, .tls, .tou, .eou, .prt) Returns current and current density information. It has the same general functionality as the ‘build_analyze_final’ script, but it will do it all in one large function, so XOPT can optimize from it.   <br />
  - The VOCS cell defines the ranges which to explore the variables: anode x position, anode y position, focus electrode x position, focus electrode y position, and focus electrode (and shield and control electrode) potential. It also defines the objectives and the constraints. <br />
  - The function 'TRAK_FUNCTION' does the main setting the variable knobs, creating mesh files to input to estat and permag, creating the estat and permag solutions from those files, creating a trak file from those estat and permag solutions, and running this process through different avg and demit parameters. It also analyzes the simulations for that solution. It returns the objectives and constraints from running the simulations.
- - The function 'evaluate_TRAK_FUNCTION' runs and evaluates the TRAK_FUNCTION for optimization.
+ - The function 'evaluate_TRAK_FUNCTION' runs and evaluates the TRAK_FUNCTION for optimization. It defines how to run xopt optimizaiton for this function.
+
+### <ins> Perform optimization (SimpleSource_XOPT_run.ipynb):  </ins> <br />
 
 
 
