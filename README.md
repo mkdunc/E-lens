@@ -92,6 +92,12 @@ Analyze:  <br />
 
 
 
+### <ins> Entire TRAK function with XOPT (SimpleSource_XOPT_run.ipynb):  </ins> <br />
+Assemble and use the tools to create and run estat and permag meshes (.min, .mls, .mou), create and run estat (.ein, .els, .eou) and permag (.pin, .pls, .pou) and trak (.tin, .tls, .tou, .eou, .prt) Returns current and current density information.It has the same general functionality as the ‘build_analyze_final’ script, but it will do it all in one large function, so XOPT can optimize from it.   <br />
+
+
+
+
 
 
 
