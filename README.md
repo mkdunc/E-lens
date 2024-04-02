@@ -31,12 +31,18 @@ Defines all the base tools that will be used in the simulations: <br />
 -- Format: avg_demit_ncycle_func(‘path/original_file_to_change.TLS’, ‘path/file_to_save_as.TLS’, avg value set to: a float, demit value set to: a float, ncycle value set to: an integer) <br />
 - converg_func: for each file in a list, given a convergence threshold, determine whether the current converges within that threshold. Returns: a list of files with whether they converge or not, as well as final current for those that converge <br />
 -- Format: converg_func([‘file1.TLS’, ‘file2.TLS’, ’file3.TLS’, etc…], convergence threshold value: a float) <br />
-
-
-
 - mesh_file_electrode_spacing2: produce a mesh file with the focus electrode and anode spacings given, save the file to the specified name. The defining lines of the focus electrode and anode distances as put into the function can be seen in the figure below. Function returns nothing other than the file that is saved. <br />
 ![fe_positions_descriptions](https://github.com/mkdunc/E-lens/assets/154284388/1c04ccf7-abab-4c29-9efe-ec4663bd5ce5)
---Format: mesh_file_electrode_spacing2(focus electrode x position: a float, focus electrode y position: a float, anode support x position: a float, anode support y position: a float, ‘path/file_to_save_to.MIN’)
+--Format: mesh_file_electrode_spacing2(focus electrode x position: a float, focus electrode y position: a float, anode support x position: a float, anode support y position: a float, ‘path/file_to_save_to.MIN’)<br />
+Note: all the details for the mesh file are defined within this function and can be manually changed if one wants to change the mesh.  <br />
+- estat_file2: write an estat file with given input mesh file,file to save to, emission potential, and potential of the focus electrode, shield, and control electrode. Returns nothing other than the file that is created. <br />
+-- Format: estat_file2(‘path/mesh_file’, ‘path/estat_file_to_save.EIN’, emission potential: a string of the value, focus electrode potential: a string of the value) <br />
+
+  
+- mesh_permag_file2: write a mesh file as the input for permag. Returns nothing other than the file that is created. <br />
+-- Format: mesh_permag_file2(‘path/mesh_permag_filename.MIN’) <br />
+Note: all the details for the mesh file are defined within this function and can be manually changed if one wants to change the mesh.  <br />
+
 
 
 
