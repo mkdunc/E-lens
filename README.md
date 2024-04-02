@@ -92,6 +92,10 @@ Analyze:  <br />
 
 
 
+### <ins> Entire TRAK script - for individual simulation run options (No xopt) (SimpleSource_results.ipynb):  </ins> <br />
+Build simulations step by step. Depending on given focus electrode positions, anode positions, and focus electrod potential, create the mesh files feed them to generate the estat and permag solutions. Use those solutions to generate the base trak file, which will be used as the base file to change the other trak files with vaying avg and demit parameters. Then analyze the resulting simulations. Reports the current convergence for iterations, the current density plots for a given Z slice, and other relevant results. Analyze the resulting electric fields. (MK YOU GOTTA PUT THE NEW FILE WITH THE FE POT CHANGES AVALIBALE) 
+
+
 ### <ins> Entire TRAK function - for Xopt optimization (SimpleSource_XOPT_run.ipynb):  </ins> <br />
 Assemble and use the tools to create and run estat and permag meshes (.min, .mls, .mou), create and run estat (.ein, .els, .eou) and permag (.pin, .pls, .pou) and trak (.tin, .tls, .tou, .eou, .prt) Returns current and current density information. It has the same general functionality as the ‘build_analyze_final’ script, but it will do it all in one large function, so XOPT can optimize from it.   <br />
  - The VOCS cell defines the ranges which to explore the variables: anode x position, anode y position, focus electrode x position, focus electrode y position, and focus electrode (and shield and control electrode) potential. It also defines the objectives and the constraints. <br />
