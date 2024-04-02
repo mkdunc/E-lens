@@ -68,15 +68,16 @@ Build:  <br />
 - run_trak: build trak with given estat and peramag files and run it. Returns nothing other than performing this operation. See 'TRAK_file2' function for more details. <br />
 -- Format: run_trak(‘path/estat_file_as_input.EOU’, ‘path/permag_file_as_input.POU’, ‘path/TRAK_file_to_save_as.TIN’) <br />
 
-
-
-
-
 - demit_loop_files: loop through and create TRAK .tin files for each demit value given. For varying through only demit values in simulations. Returns: the file list that was created. <br />
 -- Format: demit_loop_files(avg value: float, ncycle value: float, array of demit values, ‘directory_to_save_files_to’, focus electrode x position: float, focus electrode y position: float, anode x position: float, anode y position: float, ‘path/input_file_to_change.TLS’)  <br />
 
 - avg_loop_files: loop through and create TRAK .tin files for each avg value given. For varying through only avg values in simulations. Returns: the file list that was created. <br />
--- Format: avg_loop_files(demit value: float, ncycle value: float, array of avg values, ‘directory_to_save_files_to’, focus electrode x position: float, focus electrode y position: float, anode x position: float, anode y position: float, ‘path/input_file_to_change.TLS’)  <br />
+-- Format: avg_loop_files(demit value: float, ncycle value: float, array of avg values, ‘directory_to_save_files_to’, focus electrode x position: float, focus electrode y position: float, anode x position: float, anode y position: float, ‘path/input_file_to_change.TLS’)  <br /> <br />
+
+
+Analyze:  <br />
+
+
 
 
 
