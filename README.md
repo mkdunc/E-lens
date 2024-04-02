@@ -78,6 +78,12 @@ Build:  <br />
 Analyze:  <br />
 
 
+- demit_conv_analysis: perform analysis on converging demit simulations given a TRAK output file list, convergence condition, and the array of demit values from those files. <br />
+-- Format: demit_conv_analysis(convergence threshold value: a float, [list_of_demit_files_to_see_if_they_converge], array of demit values corresponding to those demit files) <br />
+
+
+- avg_conv_analysis: perform analysis for converging avg simulations given a TRAK output file list, convergence condition, and the array of avg values from those files.   <br />
+-- Format: avg_conv_analysis(convergence threshold value: a float, [list_of_avg_files_to_see_if_they_converge], array of avg values corresponding to those avg files) <br />
 
 
 
