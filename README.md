@@ -98,7 +98,7 @@ Assemble and use the tools to create and run estat and permag meshes (.min, .mls
  - The function 'TRAK_FUNCTION' does the main setting the variable knobs, creating mesh files to input to estat and permag, creating the estat and permag solutions from those files, creating a trak file from those estat and permag solutions, and running this process through different avg and demit parameters. It also analyzes the simulations for that solution. It returns the objectives and constraints from running the simulations.
  - The function 'evaluate_TRAK_FUNCTION' runs and evaluates the TRAK_FUNCTION for optimization. It defines how to run xopt optimizaiton for this function.
 
-### <ins> Perform optimization (SimpleSource_XOPT_read.ipynb):  </ins> <br />
+### <ins> Perform optimization on entire TRAK function (SimpleSource_XOPT_read.ipynb):  </ins> <br />
 Read in the TRAK functions for optimizaiton, reads in the evaluator, generator, and VOCS. Perform and visualize the optimization results. Report the results for each simulation performed in the optimization. 
 
 
